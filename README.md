@@ -1,41 +1,68 @@
-# Website
+# 縁 enishi
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+**Inside-Out パラダイムシフト支援ナレッジベース**
 
-## Installation
+---
 
-```bash
-yarn
+## コンセプト
+
+多くの人は「外の世界を変えれば、内側が変わる」という Outside-In の構造で生きている。成果・収入・評価を積み上げることで Being（存在の質）を確保しようとする。しかしその構造の限界に気づきはじめた人たちがいる。
+
+**縁 enishi** は、その人たちとともに Inside-Out への転換を探求する場だ。
+
+Being を起点に、量子力学・哲学・占い・AI活用という独自の切り口で、「在り方からの変容」を支援する。答えを渡すのではなく、伴走者として問いを深め続ける。
+
+---
+
+## ターゲット
+
+### 個人
+自分の在り方を探求したい人。外側の成功や自己啓発を一通り経験し、「これじゃない」という感覚を持っている人。
+
+### 経営者・法人
+外側の成功に飽き、経営・組織の根本を問い直したい人。哲学やテクノロジーが世界を再編していく時代の変化を感じ取っており、そこに伴走できる思考パートナーを求めている人。月10〜30万の顧問的関与。
+
+---
+
+## ファネル設計
+
+```
+SNS・note（広く思想を発信）
+  ↓
+このサイト（ナレッジベース・信頼の担保）
+  ↓
+LINE 登録（個人窓口 / 経営者窓口）
+  ↓
+個別セッション・伴走契約（有料）
 ```
 
-## Local Development
+料金はサイト上に掲載しない。LINE でのみ案内する。
+
+---
+
+## 差別化
+
+- Outside-In / Inside-Out という独自フレーム
+- 量子力学・哲学・占いを「鏡」として使う多角的アプローチ
+- AI をセルフコーチングの土台として使う設計
+- エネルギーを読む視点（妻との協業によるオプションサービス）
+
+---
+
+## 現状
+
+現在のサイトは **Docusaurus によるモック**。コンセプト・構造・ファネルの検証用。
+
+最終的には Next.js 等を使ったオリジナルの Web サイトとして再構築する予定。詳細は [要件定義書.md](./要件定義書.md) を参照。
+
+---
+
+## 開発
 
 ```bash
-yarn start
+npm install
+npm start      # ローカル開発
+npm run build  # 本番ビルド
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+ホスティング：Vercel（GitHub 連携で自動デプロイ）
