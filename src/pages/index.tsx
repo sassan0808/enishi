@@ -8,25 +8,25 @@ import styles from './index.module.css';
 
 const PILLARS = [
   {
+    title: '「なぜ」のメカニズムから',
+    emoji: '💧',
+    description:
+      '「付き合う人が大切」とは言われる。でもなぜかを説明できる人はいなかった。H₂O モデルで、意識の相転移のメカニズムから伝えます。',
+    link: '/docs/フレームワーク/意識の相転移',
+  },
+  {
     title: 'Being を起点に',
     emoji: '🌱',
     description:
-      '「何をするか」より「どう在るか」が先。量子力学・哲学・占いを通じて、自分の Being を探求します。',
+      '外側がどうであれ「それも素敵だ」という視点が自然に生まれる状態。そこへ向かうプロセスを、哲学・量子力学・AI を通じて探求します。',
     link: '/docs/コンセプト/Beingとは',
   },
   {
-    title: 'Inside-Out へのシフト',
-    emoji: '🔄',
+    title: '気楽に、生きる',
+    emoji: '🌿',
     description:
-      '外から内ではなく、内から外へ。パラダイムシフトは努力ではなく「気づき」から起きます。',
+      '気楽とは、気が楽になること。削ぎ落とされていくことで、自然と軽くなる。答えを足すのではなく、余分なものが溶けていく。',
     link: '/docs/コンセプト/パラダイムシフトの地図',
-  },
-  {
-    title: 'AI × 自己探求',
-    emoji: '🤖',
-    description:
-      'AI を「答えを出すツール」ではなく「問いを深める鏡」として使う。セルフコーチングが日常になります。',
-    link: '/docs/コンセプト/AI×自己探求',
   },
 ];
 
@@ -87,8 +87,9 @@ function ContactSection() {
             <div className={styles.contactCardIcon}>🌱</div>
             <Heading as="h3" className={styles.contactCardTitle}>個人の方</Heading>
             <p className={styles.contactCardDesc}>
-              自分の在り方を探求したい。<br />
-              Inside-Out の生き方に関心がある。
+              外側は整っているのに満たされない。<br />
+              本音で話せる人がいない。<br />
+              自分の判断軸を育てたい。
             </p>
             <a
               href={linePersonal}
