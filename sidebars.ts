@@ -28,6 +28,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'フレームワーク',
       items: [
+        'フレームワーク/はじめに',
         'フレームワーク/意識の相転移',
         'フレームワーク/幸せエネルギー拡張の法則',
         'フレームワーク/エネルギーの層と言語',
