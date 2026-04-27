@@ -1,0 +1,128 @@
+.heroBanner {
+  padding: 5rem 0 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2.5rem 1rem;
+  }
+}
+
+.heroEyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-bottom: 0.5rem;
+}
+
+.heroSub {
+  font-size: 0.65em;
+  font-weight: 400;
+  opacity: 0.8;
+  letter-spacing: 0.1em;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.lineBtn {
+  background: #06c755;
+  color: #fff !important;
+  border: none;
+  font-weight: 700;
+}
+
+.lineBtn:hover {
+  background: #05a847;
+  color: #fff !important;
+}
+
+/* Pillars section */
+.pillarsSection {
+  padding: 4rem 0;
+}
+
+.pillarCol {
+  padding: 1rem;
+}
+
+.pillarCard {
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  height: 100%;
+}
+
+.pillarEmoji {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.pillarLink {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Funnel section */
+.funnelSection {
+  background: var(--ifm-color-emphasis-100);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.sectionTitle {
+  margin-bottom: 2.5rem;
+}
+
+.funnelSteps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  max-width: 360px;
+  margin: 0 auto 2rem;
+}
+
+.funnelStep {
+  width: 100%;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+}
+
+.funnelIcon {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.funnelLabel {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.funnelDesc {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-top: 0.2rem;
+}
+
+.funnelArrow {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  opacity: 0.5;
+}
+
+.funnelCta {
+  margin-top: 1rem;
+}
