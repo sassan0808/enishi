@@ -35,19 +35,7 @@
   margin-top: 2rem;
 }
 
-.lineBtn {
-  background: #06c755;
-  color: #fff !important;
-  border: none;
-  font-weight: 700;
-}
-
-.lineBtn:hover {
-  background: #05a847;
-  color: #fff !important;
-}
-
-/* Pillars section */
+/* Pillars */
 .pillarsSection {
   padding: 4rem 0;
 }
@@ -73,56 +61,85 @@
   font-weight: 600;
 }
 
-/* Funnel section */
-.funnelSection {
+/* Contact section */
+.contactSection {
   background: var(--ifm-color-emphasis-100);
   padding: 4rem 0;
   text-align: center;
 }
 
 .sectionTitle {
+  margin-bottom: 0.75rem;
+}
+
+.sectionDesc {
+  opacity: 0.7;
   margin-bottom: 2.5rem;
+  font-size: 0.95rem;
 }
 
-.funnelSteps {
+.contactCards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-  max-width: 360px;
-  margin: 0 auto 2rem;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.funnelStep {
-  width: 100%;
+.contactCard {
   background: var(--ifm-background-color);
   border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 8px;
-  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  padding: 2rem 2.5rem;
+  max-width: 320px;
+  flex: 1;
+  min-width: 260px;
 }
 
-.funnelIcon {
-  font-size: 1.75rem;
-  margin-bottom: 0.25rem;
+.contactCardBiz {
+  border-color: #1a1a2e;
 }
 
-.funnelLabel {
-  font-weight: 700;
-  font-size: 1rem;
+.contactCardIcon {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
 }
 
-.funnelDesc {
-  font-size: 0.85rem;
+.contactCardTitle {
+  font-size: 1.1rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.contactCardDesc {
+  font-size: 0.9rem;
   opacity: 0.75;
-  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
 }
 
-.funnelArrow {
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
-  opacity: 0.5;
+.lineBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.85rem 1.75rem;
+  background: #06c755;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
 }
 
-.funnelCta {
-  margin-top: 1rem;
+.lineBtn:hover {
+  background: #05a847;
+  color: #fff;
+  text-decoration: none;
+}
+
+.lineBtnBiz {
+  background: #1a1a2e;
+}
+
+.lineBtnBiz:hover {
+  background: #16213e;
 }

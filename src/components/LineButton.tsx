@@ -2,19 +2,33 @@ import type {ReactNode} from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './LineButton.module.css';
 
+type Audience = 'personal' | 'biz';
+
 interface LineButtonProps {
+  audience?: Audience;
   label?: string;
 }
 
-export default function LineButton({label = 'LINE で相談する'}: LineButtonProps): ReactNode {
+const DEFAULTS: Record<Audience, string> = {
+  personal: '📩 個人の方はこちら（LINE）',
+  biz: '📩 経営者・法人の方はこちら（LINE）',
+};
+
+export default function LineButton({audience = 'personal', label}: LineButtonProps): ReactNode {
   const {siteConfig} = useDocusaurusContext();
-  const lineUrl = siteConfig.customFields?.lineUrl as string;
+  const url =
+    audience === 'biz'
+      ? (siteConfig.customFields?.lineBiz as string)
+      : (siteConfig.customFields?.linePersonal as string);
 
   return (
     <div className={styles.wrapper}>
-      <a href={lineUrl} className={styles.button} target="_blank" rel="noopener noreferrer">
-        <span className={styles.icon}>📩</span>
-        {label}
+      <a
+        href={url}
+        className={`${styles.button} ${audience === 'biz' ? styles.buttonBiz : ''}`}
+        target="_blank"
+        rel="noopener noreferrer">
+        {label ?? DEFAULTS[audience]}
       </a>
     </div>
   );

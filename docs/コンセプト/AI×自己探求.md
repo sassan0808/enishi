@@ -56,3 +56,4 @@ AI をツールとして使うのではなく、**Being の探求パートナー
 → [個別相談でこのワークを始める](/docs/サービス/個別相談)
 
 <LineButton />
+<LineButton audience="biz" />

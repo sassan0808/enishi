@@ -2,7 +2,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const LINE_URL = 'https://line.me/R/ti/p/YOUR_LINE_ID'; // 後で差し替え
+const LINE_PERSONAL = 'https://line.me/R/ti/p/YOUR_LINE_ID_PERSONAL'; // 個人向け（後で差し替え）
+const LINE_BIZ = 'https://line.me/R/ti/p/YOUR_LINE_ID_BIZ'; // 経営者向け（後で差し替え）
 
 const config: Config = {
   title: '縁 enishi',
@@ -27,7 +28,8 @@ const config: Config = {
   },
 
   customFields: {
-    lineUrl: LINE_URL,
+    linePersonal: LINE_PERSONAL,
+    lineBiz: LINE_BIZ,
   },
 
   presets: [
@@ -71,10 +73,16 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: LINE_URL,
-          label: '📩 LINE で相談する',
+          href: LINE_PERSONAL,
+          label: '個人の方',
           position: 'right',
           className: 'navbar-line-btn',
+        },
+        {
+          href: LINE_BIZ,
+          label: '経営者の方',
+          position: 'right',
+          className: 'navbar-line-btn navbar-line-btn--biz',
         },
       ],
     },
@@ -92,8 +100,8 @@ const config: Config = {
         {
           title: 'つながる',
           items: [
-            { label: 'LINE で相談する（無料）', href: LINE_URL },
-            { label: '企業・業務委託のご相談', to: '/docs/サービス/企業向け業務委託' },
+            { label: '📩 個人の方はこちら（LINE）', href: LINE_PERSONAL },
+            { label: '📩 経営者・法人の方はこちら（LINE）', href: LINE_BIZ },
           ],
         },
       ],

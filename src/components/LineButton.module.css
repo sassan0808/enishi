@@ -1,17 +1,19 @@
 .wrapper {
   margin: 2rem 0;
-  text-align: center;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .button {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.9rem 2rem;
+  gap: 0.4rem;
+  padding: 0.85rem 1.75rem;
   background: #06c755;
   color: #fff;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-decoration: none;
   transition: background 0.2s;
@@ -23,6 +25,10 @@
   text-decoration: none;
 }
 
-.icon {
-  font-size: 1.2rem;
+.buttonBiz {
+  background: #1a1a2e;
+}
+
+.buttonBiz:hover {
+  background: #16213e;
 }

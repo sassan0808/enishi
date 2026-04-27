@@ -49,3 +49,4 @@ import LineButton from '@site/src/components/LineButton';
 → [哲学的アプローチ](./哲学的アプローチ) も参照
 
 <LineButton />
+<LineButton audience="biz" />

@@ -32,7 +32,8 @@ const PILLARS = [
 
 function HeroBanner() {
   const {siteConfig} = useDocusaurusContext();
-  const lineUrl = siteConfig.customFields?.lineUrl as string;
+  const linePersonal = siteConfig.customFields?.linePersonal as string;
+  const lineBiz = siteConfig.customFields?.lineBiz as string;
 
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -46,13 +47,6 @@ function HeroBanner() {
           <Link className="button button--secondary button--lg" to="/docs/コンセプト/Inside-Outとは">
             コンセプトを読む
           </Link>
-          <a
-            className={clsx('button button--lg', styles.lineBtn)}
-            href={lineUrl}
-            target="_blank"
-            rel="noopener noreferrer">
-            📩 LINE で相談する
-          </a>
         </div>
       </div>
     </header>
@@ -74,39 +68,51 @@ function PillarCard({title, emoji, description, link}: (typeof PILLARS)[0]) {
   );
 }
 
-function FunnelSection() {
+function ContactSection() {
   const {siteConfig} = useDocusaurusContext();
-  const lineUrl = siteConfig.customFields?.lineUrl as string;
+  const linePersonal = siteConfig.customFields?.linePersonal as string;
+  const lineBiz = siteConfig.customFields?.lineBiz as string;
 
   return (
-    <section className={styles.funnelSection}>
+    <section className={styles.contactSection}>
       <div className="container">
         <Heading as="h2" className={styles.sectionTitle}>
-          縁 enishi との出会い方
+          つながる
         </Heading>
-        <div className={styles.funnelSteps}>
-          {[
-            {icon: '📱', label: 'SNS・note', desc: '日々の発信・読み物コンテンツ'},
-            {icon: '📖', label: 'このサイト', desc: 'コンセプト・フレームワークを深く理解する'},
-            {icon: '📩', label: 'LINE で繋がる', desc: 'まず話だけでも、気軽にどうぞ'},
-            {icon: '🌿', label: '個別相談', desc: 'Being の探求セッション（有料）'},
-          ].map((step, i) => (
-            <div key={i} className={styles.funnelStep}>
-              <div className={styles.funnelIcon}>{step.icon}</div>
-              <div className={styles.funnelLabel}>{step.label}</div>
-              <div className={styles.funnelDesc}>{step.desc}</div>
-              {i < 3 && <div className={styles.funnelArrow}>↓</div>}
-            </div>
-          ))}
-        </div>
-        <div className={styles.funnelCta}>
-          <a
-            className={clsx('button button--lg', styles.lineBtn)}
-            href={lineUrl}
-            target="_blank"
-            rel="noopener noreferrer">
-            📩 LINE で相談する（無料）
-          </a>
+        <p className={styles.sectionDesc}>
+          料金・詳細は LINE にてご案内しています。
+        </p>
+        <div className={styles.contactCards}>
+          <div className={styles.contactCard}>
+            <div className={styles.contactCardIcon}>🌱</div>
+            <Heading as="h3" className={styles.contactCardTitle}>個人の方</Heading>
+            <p className={styles.contactCardDesc}>
+              自分の在り方を探求したい。<br />
+              Inside-Out の生き方に関心がある。
+            </p>
+            <a
+              href={linePersonal}
+              className={clsx(styles.lineBtn)}
+              target="_blank"
+              rel="noopener noreferrer">
+              📩 LINE でつながる
+            </a>
+          </div>
+          <div className={clsx(styles.contactCard, styles.contactCardBiz)}>
+            <div className={styles.contactCardIcon}>🏢</div>
+            <Heading as="h3" className={styles.contactCardTitle}>経営者・法人の方</Heading>
+            <p className={styles.contactCardDesc}>
+              経営・組織の根本を問い直したい。<br />
+              伴走者として話せる相手が欲しい。
+            </p>
+            <a
+              href={lineBiz}
+              className={clsx(styles.lineBtn, styles.lineBtnBiz)}
+              target="_blank"
+              rel="noopener noreferrer">
+              📩 LINE でつながる
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -128,7 +134,7 @@ export default function Home(): ReactNode {
             </div>
           </div>
         </section>
-        <FunnelSection />
+        <ContactSection />
       </main>
     </Layout>
   );

@@ -48,3 +48,4 @@ Being は頭で理解するものではなく、**体験・内省・対話** を
 ---
 
 <LineButton />
+<LineButton audience="biz" />
