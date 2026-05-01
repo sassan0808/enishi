@@ -73,21 +73,6 @@ const sidebars: SidebarsConfig = {
         'フレームワーク/エネルギーを読む',
       ],
     },
-    {
-      type: 'category',
-      label: 'サービス',
-      items: [
-        'サービス/個別相談',
-        'サービス/セルフコーチング土台作り',
-        'サービス/企業向け業務委託',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'ブレスト（メモ）',
-      collapsed: true,
-      items: ['ブレスト/概要'],
-    },
   ],
 };
 

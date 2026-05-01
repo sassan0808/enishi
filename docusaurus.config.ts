@@ -68,11 +68,6 @@ const config: Config = {
           position: 'left',
         },
         {
-          to: '/docs/サービス/個別相談',
-          label: 'サービス',
-          position: 'left',
-        },
-        {
           href: LINE_PERSONAL,
           label: '個人の方',
           position: 'right',
@@ -94,7 +89,6 @@ const config: Config = {
           items: [
             { label: 'コンセプト', to: '/docs/コンセプト/Inside-Outとは' },
             { label: 'フレームワーク', to: '/docs/フレームワーク/量子力学とBeing' },
-            { label: 'サービス', to: '/docs/サービス/個別相談' },
           ],
         },
         {
