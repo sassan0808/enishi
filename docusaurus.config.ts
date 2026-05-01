@@ -62,6 +62,11 @@ const config: Config = {
           position: 'left',
           label: '読む',
         },
+        {
+          href: 'https://kokone-journal-git-main-sassan0808-gmailcoms-projects.vercel.app/advanced-fortune',
+          label: '🔢 369数秘を試す',
+          position: 'left',
+        },
       ],
     },
     footer: {
