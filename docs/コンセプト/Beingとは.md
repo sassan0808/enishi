@@ -4,7 +4,6 @@ sidebar_position: 2
 tags: [コンセプト, Being, 自己理解]
 ---
 
-import LineButton from '@site/src/components/LineButton';
 
 ## Being ＝ 存在の質
 
@@ -47,5 +46,3 @@ Being は頭で理解するものではなく、**体験・内省・対話** を
 
 ---
 
-<LineButton />
-<LineButton audience="biz" />

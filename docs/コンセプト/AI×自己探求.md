@@ -4,7 +4,6 @@ sidebar_position: 4
 tags: [コンセプト, AI, セルフコーチング]
 ---
 
-import LineButton from '@site/src/components/LineButton';
 
 ## AI は「鏡」になれる
 
@@ -59,5 +58,3 @@ AI をツールとして使うのではなく、**Being の探求パートナー
 
 → [個別相談でこのワークを始める](/docs/サービス/個別相談)
 
-<LineButton />
-<LineButton audience="biz" />

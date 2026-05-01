@@ -4,7 +4,6 @@ sidebar_position: 5
 tags: [フレームワーク, AI, 意識, 量から質へ, Inside-Out]
 ---
 
-import LineButton from '@site/src/components/LineButton';
 
 ## 道具は、起点を拡張する
 
@@ -103,5 +102,3 @@ AIはそれを、忠実に、圧倒的なスピードで拡張するだけだ。
 → [左脳の上位互換](./左脳の上位互換) — AIが代替するもの、人間に残るもの  
 → [AI × 自己探求](/docs/コンセプト/AI×自己探求) — Inside-OutでAIを使う具体的な方法
 
-<LineButton />
-<LineButton audience="biz" />

@@ -2,9 +2,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const LINE_PERSONAL = 'https://line.me/R/ti/p/YOUR_LINE_ID_PERSONAL'; // 個人向け（後で差し替え）
-const LINE_BIZ = 'https://line.me/R/ti/p/YOUR_LINE_ID_BIZ'; // 経営者向け（後で差し替え）
-
 const config: Config = {
   title: '縁 enishi',
   tagline: '「なぜ」から始まる、Inside-Out へのパラダイムシフト支援',
@@ -25,11 +22,6 @@ const config: Config = {
   i18n: {
     defaultLocale: 'ja',
     locales: ['ja'],
-  },
-
-  customFields: {
-    linePersonal: LINE_PERSONAL,
-    lineBiz: LINE_BIZ,
   },
 
   presets: [

@@ -4,7 +4,6 @@ sidebar_position: 1
 tags: [フレームワーク, 量子力学, Being]
 ---
 
-import LineButton from '@site/src/components/LineButton';
 
 ## なぜ量子力学が自己探求に関係するのか
 
@@ -48,5 +47,3 @@ import LineButton from '@site/src/components/LineButton';
 → [Being とは](/docs/コンセプト/Beingとは) を読む  
 → [哲学的アプローチ](./哲学的アプローチ) も参照
 
-<LineButton />
-<LineButton audience="biz" />

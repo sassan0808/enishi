@@ -32,8 +32,6 @@ const PILLARS = [
 
 function HeroBanner() {
   const {siteConfig} = useDocusaurusContext();
-  const linePersonal = siteConfig.customFields?.linePersonal as string;
-  const lineBiz = siteConfig.customFields?.lineBiz as string;
 
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -68,58 +66,6 @@ function PillarCard({title, emoji, description, link}: (typeof PILLARS)[0]) {
   );
 }
 
-function ContactSection() {
-  const {siteConfig} = useDocusaurusContext();
-  const linePersonal = siteConfig.customFields?.linePersonal as string;
-  const lineBiz = siteConfig.customFields?.lineBiz as string;
-
-  return (
-    <section className={styles.contactSection}>
-      <div className="container">
-        <Heading as="h2" className={styles.sectionTitle}>
-          つながる
-        </Heading>
-        <p className={styles.sectionDesc}>
-          料金・詳細は LINE にてご案内しています。
-        </p>
-        <div className={styles.contactCards}>
-          <div className={styles.contactCard}>
-            <div className={styles.contactCardIcon}>🌱</div>
-            <Heading as="h3" className={styles.contactCardTitle}>個人の方</Heading>
-            <p className={styles.contactCardDesc}>
-              外側は整っているのに満たされない。<br />
-              本音で話せる人がいない。<br />
-              自分の判断軸を育てたい。
-            </p>
-            <a
-              href={linePersonal}
-              className={clsx(styles.lineBtn)}
-              target="_blank"
-              rel="noopener noreferrer">
-              📩 LINE でつながる
-            </a>
-          </div>
-          <div className={clsx(styles.contactCard, styles.contactCardBiz)}>
-            <div className={styles.contactCardIcon}>🏢</div>
-            <Heading as="h3" className={styles.contactCardTitle}>経営者・法人の方</Heading>
-            <p className={styles.contactCardDesc}>
-              経営・組織の根本を問い直したい。<br />
-              伴走者として話せる相手が欲しい。
-            </p>
-            <a
-              href={lineBiz}
-              className={clsx(styles.lineBtn, styles.lineBtnBiz)}
-              target="_blank"
-              rel="noopener noreferrer">
-              📩 LINE でつながる
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -135,7 +81,6 @@ export default function Home(): ReactNode {
             </div>
           </div>
         </section>
-        <ContactSection />
       </main>
     </Layout>
   );

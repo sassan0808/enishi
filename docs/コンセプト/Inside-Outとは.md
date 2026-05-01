@@ -4,7 +4,6 @@ sidebar_position: 1
 tags: [コンセプト, Inside-Out, パラダイムシフト, 幸せ, 引き寄せ]
 ---
 
-import LineButton from '@site/src/components/LineButton';
 
 ## Outside-In の世界
 
@@ -133,5 +132,3 @@ Outside-In から Inside-Out へのシフトが起きると、幸せの定義が
 - AI を使ったセルフコーチングの土台作り
 - [幸せエネルギー拡張の法則](/docs/フレームワーク/幸せエネルギー拡張の法則) — 源との共同創造の実践
 
-<LineButton />
-<LineButton audience="biz" />
