@@ -67,18 +67,6 @@ const config: Config = {
           label: 'フレームワーク',
           position: 'left',
         },
-        {
-          href: LINE_PERSONAL,
-          label: '個人の方',
-          position: 'right',
-          className: 'navbar-line-btn',
-        },
-        {
-          href: LINE_BIZ,
-          label: '経営者の方',
-          position: 'right',
-          className: 'navbar-line-btn navbar-line-btn--biz',
-        },
       ],
     },
     footer: {
@@ -89,13 +77,6 @@ const config: Config = {
           items: [
             { label: 'コンセプト', to: '/docs/コンセプト/Inside-Outとは' },
             { label: 'フレームワーク', to: '/docs/フレームワーク/量子力学とBeing' },
-          ],
-        },
-        {
-          title: 'つながる',
-          items: [
-            { label: '📩 個人の方はこちら（LINE）', href: LINE_PERSONAL },
-            { label: '📩 経営者・法人の方はこちら（LINE）', href: LINE_BIZ },
           ],
         },
       ],
