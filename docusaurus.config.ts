@@ -60,26 +60,13 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'mainSidebar',
           position: 'left',
-          label: 'コンセプト',
-        },
-        {
-          to: '/docs/フレームワーク/量子力学とBeing',
-          label: 'フレームワーク',
-          position: 'left',
+          label: '読む',
         },
       ],
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'コンテンツ',
-          items: [
-            { label: 'コンセプト', to: '/docs/コンセプト/Inside-Outとは' },
-            { label: 'フレームワーク', to: '/docs/フレームワーク/量子力学とBeing' },
-          ],
-        },
-      ],
+      links: [],
       copyright: `© ${new Date().getFullYear()} 縁 enishi`,
     },
     prism: {
